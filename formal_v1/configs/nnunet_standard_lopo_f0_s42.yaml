@@ -1,0 +1,61 @@
+experiment_name: nnunet_standard_lopo_f0_s42
+model:
+  name: nnunet_v2_2d
+  configuration: 2d
+  trainer: nnUNetTrainerSeed42
+  plans: nnUNetPlans
+  sampling: default
+  loss: default_dice_ce
+data:
+  root: /root/autodl-tmp/cancer/dataset
+  metadata: metadata.csv
+  split_file: splits/slide_3fold.csv
+  split_protocol: grouped
+  fold: 0
+  validation_group: slide_0167
+  group_column: slide_id
+  class4_policy: background
+  annotation_source: official_semantic_png_masks
+  quality_issue_policy: retain_all_and_report
+  heldout_internal_role: test
+  heldout_reporting_name: formal_test
+  heldout_final_test_eligible: true
+evaluation:
+  satellite_max_distance_px: 8.0
+  cluster_min_iou: 0.1
+  visualizations: 12
+  error_cases: 20
+checkpoint_selection:
+  source: validation_only
+  metric: validation_ema_dice_fg
+  aggregation: macro_mean_foreground
+  mode: max
+  implementation: nnunet_native_checkpoint_best
+  test_set_used_for_selection: false
+reporting:
+  current_heldout_set_name: development
+  rationale: inspected_and_used_for_method_development
+  final_results_require_new_slide_level_cross_validation: true
+nnunet:
+  version: 2.8.1
+  dataset_id: 510
+  default_epochs: 1000
+  augmentation: default
+output_root: /root/autodl-tmp/cancer/experiments/final/nnunet_standard_lopo/fold0/seed42
+release: nnunet_standard_lopo_final
+formal:
+  seed: 42
+  dataset_id: 510
+  test_patient: patient_A
+  test_slide: slide_0165
+  test_inference_count: 1
+  test_feedback_forbidden: true
+point_evaluation:
+  ap_candidate_threshold: 0.05
+  nms_radius_px: 3
+  matching_radius_px: 5
+  threshold_sweep:
+  - 0.1
+  - 0.9
+  - 0.05
+  threshold_policy: maximize_validation_point_f1_after_checkpoint_selection

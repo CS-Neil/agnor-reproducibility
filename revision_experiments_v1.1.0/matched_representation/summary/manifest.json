@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-09-21T16:51:38.962550+00:00",
+  "source_hashes": {
+    "mask_f0_s42": {
+      "test_summary": "db325b319b0f49d09f4ddcd80d4f13c8e7aa4fb376a1e1975f583796a85b886a",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "1b63982bc3ea960acc71e48dee645838da654f64a598920d71713733632168ae"
+    },
+    "mask_f1_s42": {
+      "test_summary": "8443a219014df69c290c35ddf810c01f6886fe3831ee64b86abd6bc03635be03",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "f18263f08b25728a0e347217e4179762ef4b36596818bf5e04a90cb01e53a43d"
+    },
+    "mask_f2_s42": {
+      "test_summary": "8c808ed618d17cf6048c81cfa29df9f62cd57ac18a370efb8580f58a597b4579",
+      "resolved_split": "ce5f9564ecf76ac2a41694c82ac25052cc416f3f9c70a2c9baede67473049fe3",
+      "checkpoint": "910f4b0281a150ff5b21bafac0a81ad80b51e23d1a4ba76fa5c55a07c277eb86"
+    },
+    "center_f0_s42": {
+      "test_summary": "5512a7ff5d46c62923b36309a1ef480e9d2538f75dd17aa82c1299f6b7bdafc7",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "f2cd61cf22ff2af508b53f01b2a25075735f3317f79ee147e0f9cde61b56843f"
+    },
+    "center_f1_s42": {
+      "test_summary": "c7f9b6c3fc090c50ba6a59d61e3cdde9f8fd398d06ad7b59658212ab423f1acd",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "b0634d401bf76428c06a6093884c149bd036415305ed9c52821a345170bd3612"
+    },
+    "center_f2_s42": {
+      "test_summary": "403374a6d2e7d04fe2dca589106f87df4f413fb34873a399bcb0e0cb4f236be7",
+      "resolved_split": "ce5f9564ecf76ac2a41694c82ac25052cc416f3f9c70a2c9baede67473049fe3",
+      "checkpoint": "a423c239fbd4de57415c457e9aaea4e659a75069a3d3f026334958daff57ae1e"
+    }
+  },
+  "notes": [
+    "All values are descriptive because there are three independent held-out patients.",
+    "Differences are center minus mask and are paired within fold/patient.",
+    "No checkpoint or threshold is selected from these held-out results."
+  ]
+}

@@ -1,0 +1,4 @@
+method,nucleus_dice_mean_sd,cluster_dice_mean_sd,satellite_ap_mean_sd,point_f1_mean_sd,fp_per_image_mean_sd,count_mae_positive_mean_sd
+Standard nnU-Net,0.455 ± 0.051,0.518 ± 0.024,0.135 ± 0.105,0.237 ± 0.174,7.576 ± 11.442,7.832 ± 11.578
+Balanced,0.555 ± 0.143,0.534 ± 0.089,0.225 ± 0.114,0.314 ± 0.097,1.069 ± 0.768,1.308 ± 0.205
+Proposed C4,0.505 ± 0.189,0.428 ± 0.173,0.303 ± 0.133,0.295 ± 0.131,2.232 ± 2.055,3.420 ± 3.712

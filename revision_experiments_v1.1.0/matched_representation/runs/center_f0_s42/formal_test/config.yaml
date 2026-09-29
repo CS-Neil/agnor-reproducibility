@@ -1,0 +1,106 @@
+augmentation:
+  gamma:
+  - 0.85
+  - 1.15
+  gaussian_noise_probability: 0.15
+  horizontal_flip: 0.5
+  intensity_scale:
+  - 0.9
+  - 1.1
+  intensity_shift:
+  - -0.04
+  - 0.04
+  vertical_flip: 0.5
+center_labels:
+  overlap_rule: pixelwise_max
+  root: /home/neil/cancer/experiments/satellite_center_labels
+  sigma_px: 2.5
+  truncate_sigma: 3.0
+checkpoint_selection:
+  formula: 0.20*nucleus_dice+0.20*cluster_dice+0.60*satellite_point_ap
+  interval_epochs: 10
+  protocol: protocol-v2
+  threshold_is_fixed_during_selection: true
+  validation_only: true
+data:
+  class4_policy: background
+  fold: 0
+  group_column: slide_id
+  heldout_internal_role: test
+  heldout_reporting_name: formal_test
+  metadata: metadata.csv
+  root: /home/neil/cancer/dataset
+  split_file: splits/slide_3fold.csv
+  split_protocol: grouped
+  validation_group: slide_0167
+experiment:
+  description: Reviewer-requested matched-backbone satellite-target ablation; separate
+    from the frozen original formal release
+  mode: c4_decoupled_no_mask
+  name: matched_center_f0_s42
+  release: revision_matched_representation_20260920
+  satellite_target: center
+inference:
+  overlap: 0.5
+  weighted_fusion: hann_min_0.05
+model:
+  architecture: lightweight_shared_unet_two_head
+  base_channels: 16
+  center_head: 1x1_conv
+  mask_auxiliary_head: none
+  semantic_classes:
+  - Background
+  - Nucleus
+  - Cluster
+output: /home/neil/cancer/revision_experiments/matched_representation/runs/center_f0_s42
+point_evaluation:
+  ap_candidate_threshold: 0.05
+  checkpoint_match_radius_px: 5
+  checkpoint_threshold: 0.3
+  checkpoint_threshold_policy: fixed_during_checkpoint_selection
+  final_threshold_policy: maximize_validation_point_f1_after_checkpoint_selection
+  nms_radius_px: 3
+  render_radius_px: 6
+  reporting_match_radii_px:
+  - 3
+  - 5
+  - 7
+  threshold_sweep:
+  - 0.1
+  - 0.9
+  - 0.05
+sampling:
+  categories:
+  - satellite
+  - cluster
+  - nucleus
+  - random
+  probabilities:
+  - 0.35
+  - 0.35
+  - 0.2
+  - 0.1
+training:
+  batch_size: 2
+  center_branch_force_fp32: true
+  center_loss: modified_focal_fp32_logsigmoid
+  center_loss_force_fp32: true
+  center_loss_weight: 0.2
+  early_stopping_patience_epochs: 50
+  fail_on_nonfinite_center_loss: true
+  fail_on_nonfinite_gradient: true
+  fail_on_nonfinite_total_loss: true
+  grad_scaler_growth_interval: 1000000
+  grad_scaler_init_scale: 128
+  iterations_per_epoch: 250
+  learning_rate: 0.01
+  mask_auxiliary_weight: 0.0
+  max_epochs: 250
+  mixed_precision_network: true
+  num_workers: 6
+  patch_size:
+  - 1536
+  - 1024
+  seed: 42
+  segmentation_loss: dice_ce
+  weight_decay: 3.0e-05

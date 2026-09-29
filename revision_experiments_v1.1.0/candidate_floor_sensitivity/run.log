@@ -1,0 +1,29 @@
+skip completed mask_f0_s42
+skip completed mask_f1_s42
+skip completed mask_f2_s42
+skip completed center_f0_s42
+skip completed center_f1_s42
+skip completed center_f2_s42
+{
+  "created_at_utc": "2026-09-25T14:27:25.847818+00:00",
+  "protocol_sha256": "c1f1bdb225e22f5103bde4c19706525ee1aeee070bd231b45e9163e1cda16338",
+  "floors": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "models": 6,
+  "v1_heldout_model_patient_rows": 6,
+  "v2_model_patient_rows": 72,
+  "model_result_hashes": {
+    "center_f0_s42": "942fa6769c78726f88cb6d68ff5b387af2d5580b8edbe61fd0b16de5f1b9e57a",
+    "center_f1_s42": "6b09be1e951b4638ec8fde8d9f2898578ee5cba4585734f7554dec30aaddbba6",
+    "center_f2_s42": "0d0476f48cba7657725017970492583ae2db593755850562bcdd3112a260fd82",
+    "mask_f0_s42": "ab1ced80e6527f3d646eb681e0b96452dc17b4bc34b83fd2f23afe55a84155a0",
+    "mask_f1_s42": "3b58f181140f8b99e63d43ef637968d9bbf5e370733643e3431cf06d0bdd76a7",
+    "mask_f2_s42": "4ab367332a8475c8425fd0d61543b60fa055cb76bbe49e369819c6d136a4112d"
+  }
+}

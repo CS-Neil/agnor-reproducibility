@@ -1,0 +1,56 @@
+[
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/mask_f0_s123.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/mask_f0_s123",
+    "status": "already_completed",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "train_exit_code": null,
+    "test_exit_code": null
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/center_f0_s123.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/center_f0_s123",
+    "status": "already_completed",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "train_exit_code": null,
+    "test_exit_code": null
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/mask_f1_s123.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/mask_f1_s123",
+    "status": "already_completed",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "train_exit_code": null,
+    "test_exit_code": null
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/center_f1_s123.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/center_f1_s123",
+    "status": "already_completed",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "train_exit_code": null,
+    "test_exit_code": null
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/mask_f2_s123.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/mask_f2_s123",
+    "status": "already_completed",
+    "started_at_utc": null,
+    "finished_at_utc": null,
+    "train_exit_code": null,
+    "test_exit_code": null
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/center_f2_s123.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/center_f2_s123",
+    "status": "training_failed",
+    "started_at_utc": "2026-09-25T14:27:26.676107+00:00",
+    "finished_at_utc": "2026-09-25T14:34:36.848385+00:00",
+    "train_exit_code": 1,
+    "test_exit_code": null
+  }
+]

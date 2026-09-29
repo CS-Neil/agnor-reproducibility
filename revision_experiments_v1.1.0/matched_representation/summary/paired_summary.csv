@@ -1,0 +1,13 @@
+metric,direction,independent_unit,n,mean,sample_sd
+nucleus_dice,center_minus_mask,heldout_patient,3,0.039078249655743275,0.050856853377971786
+cluster_dice,center_minus_mask,heldout_patient,3,0.012437690325797945,0.06372728192974181
+point_ap,center_minus_mask,heldout_patient,3,0.1413612388130813,0.15613166794600528
+point_precision,center_minus_mask,heldout_patient,3,0.0573129280060238,0.09826152017396961
+point_recall,center_minus_mask,heldout_patient,3,0.24498800521327305,0.17584334195046278
+point_f1,center_minus_mask,heldout_patient,3,0.0640369310577762,0.12473268429850952
+fp_per_image,center_minus_mask,heldout_patient,3,5.960550355066968,10.492984723394986
+count_mae_all,center_minus_mask,heldout_patient,3,6.055353412842801,10.356223200125651
+count_mae_positive,center_minus_mask,heldout_patient,3,1.0686433934554234,1.1364530514151185
+zero_case_fp,center_minus_mask,heldout_patient,3,7.319234578381437,13.105052325600386
+positive_case_recall,center_minus_mask,heldout_patient,3,0.24498800521327305,0.17584334195046278
+localization_error,center_minus_mask,heldout_patient,3,-2.225713146200152,0.3260631860942242

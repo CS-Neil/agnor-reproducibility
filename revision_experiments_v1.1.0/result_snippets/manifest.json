@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-09-21T20:33:17.937887+00:00",
+  "source_sha256": {
+    "matched_representation/summary/formal_test_results.csv": "dfde2ad978938fe396855ed6879823aca2c6ef6135bb4724157adb9f6f254a3d",
+    "matched_representation/summary/arm_summary.csv": "659bedc3320b14a993a0ada23835c0a7e0e55a4c00a31e068837ed0a8d51a0d9",
+    "matched_representation/summary/paired_patient_differences.csv": "8dec9aa7d3d8b9163b21f81642dce42f09adc66b4c2a141b2fadeb2492e5c98e",
+    "matched_representation/summary/paired_summary.csv": "8875a30cbae28aee5273ac2fc88fdd59fcec6444e43cf5ae7f56323880e2259e",
+    "ccagt_v2/model_patient_metrics.csv": "0690c635b7fb8b7405dfe3a3db862bd71cb7e9652f0763a9b5f0bbc257723603",
+    "ccagt_v2/patient_arm_metrics.csv": "9a4dcfc7ec37765f957cb32d8a945d03bbc50366d22fddcad6224f7e74f3c5e9",
+    "ccagt_v2/patient_paired_differences.csv": "d945df70a9bb38cc400747fd9dee737d894fba8865a128a07bdad544193fef0e",
+    "ccagt_v2/cohort_paired_summary.csv": "4cbd7fc0ea1a73d88355f6169e95fd427f2a99f38555e4002069e04a6e0582ea",
+    "ccagt_v2/V2_SUMMARY_COMPLETE": "c3dab90710fb7de8b4904e911fa8a06b1c0fd38faa1e78153abf4065d35fb3c9"
+  },
+  "row_counts": {
+    "matched_runs": 6,
+    "matched_arms": 2,
+    "v2_patient_arms": 24,
+    "v2_patient_differences": 12
+  },
+  "output_sha256": {
+    "matched_table_rows.tex": "0c907353b9154daa2fd8739aaa33d5b7f0ec4baf04f8a38be8542695850cac29",
+    "v2_table_rows.tex": "cc46887354485340a3bfef966e1fa89ff219e1d9d2c81595766fcf103364ddd5",
+    "RESULTS_EVIDENCE.md": "d8bb869b3dd88996dc02683b7ad63a5b78118e2c00a8153b9a95eebf817474dc"
+  }
+}

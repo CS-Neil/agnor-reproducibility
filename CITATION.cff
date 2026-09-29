@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "AgNOR segmentation reproducibility artifacts"
+message: "Please cite the associated manuscript and this versioned artifact."
+type: software
+version: 1.1.0
+date-released: 2026-09-30
+repository-code: "https://github.com/CS-Neil/agnor-reproducibility"
+authors:
+  - family-names: Zhang
+    given-names: Wenbin
+  - family-names: Chen
+    given-names: Hui
+  - family-names: Li
+    given-names: Yang
+  - family-names: Chang
+    given-names: Guijie
+  - family-names: Zhao
+    given-names: Xiaolong
+  - family-names: Yang
+    given-names: Xiaoling
+  - family-names: Wang
+    given-names: Hao
+  - family-names: Huang
+    given-names: Binhang

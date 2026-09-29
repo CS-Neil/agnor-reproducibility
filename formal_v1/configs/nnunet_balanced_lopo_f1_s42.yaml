@@ -1,0 +1,74 @@
+experiment_name: nnunet_balanced_lopo_f1_s42
+parent_baseline: nnunet_s1_sampling_fold0
+model:
+  name: nnunet_v2_2d
+  configuration: 2d
+  trainer: nnUNetTrainerBalancedSamplingComposite250
+  plans: nnUNetPlans
+data:
+  root: /root/autodl-tmp/cancer/dataset
+  metadata: metadata.csv
+  split_file: splits/slide_3fold.csv
+  split_protocol: grouped
+  fold: 1
+  validation_group: slide_0165
+  group_column: slide_id
+  class4_policy: background
+  annotation_source: official_semantic_png_masks
+  quality_issue_policy: retain_all_and_report
+  heldout_internal_role: test
+  heldout_reporting_name: formal_test
+  heldout_final_test_eligible: true
+training:
+  seed: 42
+  max_epochs: 250
+  iterations_per_epoch: 250
+  original_1000_epoch_lr_trajectory: true
+  checkpoint_interval_epochs: 10
+  early_stopping_patience_epochs: 50
+  loss: default_dice_ce
+sampling:
+  satellite_centered: 0.35
+  cluster_centered: 0.35
+  nucleus_centered: 0.2
+  ordinary_random: 0.1
+  rationale: S1 Cluster pixels were primarily absorbed by Background, not Satellite
+acceptance:
+  satellite_f1_gain_over_s0_min: 0.05
+  satellite_fp_per_image_reduction_min: 0.25
+  cluster_dice_drop_from_s0_max: 0.05
+  nucleus_dice_drop_from_s0_max: 0.02
+evaluation:
+  satellite_max_distance_px: 8.0
+  cluster_min_iou: 0.1
+  visualizations: 12
+  error_cases: 20
+checkpoint_selection:
+  source: validation_only
+  formula: 0.25*nucleus_dice+0.25*cluster_dice+0.50*satellite_object_f1
+  mode: max
+  interval_epochs: 10
+  development_set_used_for_selection: false
+reporting:
+  current_heldout_set_name: development
+  final_results_require_new_slide_level_cross_validation: true
+output_root: /root/autodl-tmp/cancer/experiments/final/nnunet_balanced_lopo/fold1/seed42
+release: nnunet_balanced_lopo_final
+formal:
+  seed: 42
+  dataset_id: 511
+  test_patient: patient_B
+  test_slide: slide_0166
+  test_inference_count: 1
+  test_feedback_forbidden: true
+point_evaluation:
+  ap_candidate_threshold: 0.05
+  nms_radius_px: 3
+  matching_radius_px: 5
+  threshold_sweep:
+  - 0.1
+  - 0.9
+  - 0.05
+  threshold_policy: maximize_validation_point_f1_after_checkpoint_selection
+nnunet:
+  dataset_id: 511

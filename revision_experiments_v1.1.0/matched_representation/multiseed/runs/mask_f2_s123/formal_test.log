@@ -1,0 +1,29 @@
+evaluated 100/102
+evaluated 102/102
+{
+  "split": "test",
+  "images": 102,
+  "checkpoint": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/mask_f2_s123/checkpoint_best.pth",
+  "checkpoint_epoch": 100,
+  "selection_protocol": "protocol-v2",
+  "operating_threshold": 0.2,
+  "nms_radius_px": 3,
+  "matching_radius_px": 5.0,
+  "nucleus_dice": 0.4568486163981237,
+  "nucleus_iou": 0.29604912470206995,
+  "cluster_dice": 0.501486166293869,
+  "cluster_iou": 0.3346556801905467,
+  "point_ap": 0.10827145168024947,
+  "point_precision": 0.10743801652892562,
+  "point_recall": 0.4482758620689655,
+  "point_f1": 0.17333333333333334,
+  "tp": 39,
+  "fp": 324,
+  "fn": 48,
+  "fp_per_image": 3.176470588235294,
+  "count_mae_all": 3.0588235294117645,
+  "count_mae_positive": 3.324324324324324,
+  "zero_case_fp": 2.9076923076923076,
+  "positive_case_recall": 0.4482758620689655,
+  "localization_error": 2.719472900415078
+}

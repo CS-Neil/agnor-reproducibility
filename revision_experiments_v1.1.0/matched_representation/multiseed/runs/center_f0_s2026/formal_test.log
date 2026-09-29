@@ -1,0 +1,46 @@
+evaluated 100/1843
+evaluated 200/1843
+evaluated 300/1843
+evaluated 400/1843
+evaluated 500/1843
+evaluated 600/1843
+evaluated 700/1843
+evaluated 800/1843
+evaluated 900/1843
+evaluated 1000/1843
+evaluated 1100/1843
+evaluated 1200/1843
+evaluated 1300/1843
+evaluated 1400/1843
+evaluated 1500/1843
+evaluated 1600/1843
+evaluated 1700/1843
+evaluated 1800/1843
+evaluated 1843/1843
+{
+  "split": "test",
+  "images": 1843,
+  "checkpoint": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/center_f0_s2026/checkpoint_best.pth",
+  "checkpoint_epoch": 150,
+  "selection_protocol": "protocol-v2",
+  "operating_threshold": 0.35,
+  "nms_radius_px": 3,
+  "matching_radius_px": 5.0,
+  "nucleus_dice": 0.6764497869009007,
+  "nucleus_iou": 0.5110873620102333,
+  "cluster_dice": 0.6345911735047126,
+  "cluster_iou": 0.4647627591023947,
+  "point_ap": 0.4533692405529051,
+  "point_precision": 0.4641586171835282,
+  "point_recall": 0.5086350974930363,
+  "point_f1": 0.4853801169590643,
+  "tp": 913,
+  "fp": 1054,
+  "fn": 882,
+  "fp_per_image": 0.5718936516549105,
+  "count_mae_all": 0.7737384698860553,
+  "count_mae_positive": 1.0128893662728249,
+  "zero_case_fp": 0.5296052631578947,
+  "positive_case_recall": 0.5086350974930363,
+  "localization_error": 0.6986280788482868
+}

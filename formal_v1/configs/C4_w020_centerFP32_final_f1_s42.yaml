@@ -1,0 +1,105 @@
+experiment:
+  name: C4_w020_centerFP32_final_f1_s42
+  mode: c4_decoupled_no_mask
+  description: Frozen final C4 confirmation; strict leave-one-patient/slide-out three-fold
+    evaluation with seed 42
+  release: C4_w020_centerFP32_final
+model:
+  architecture: lightweight_shared_unet_two_head
+  base_channels: 16
+  semantic_classes:
+  - Background
+  - Nucleus
+  - Cluster
+  center_head: 1x1_conv
+  mask_auxiliary_head: none
+data:
+  root: /root/autodl-tmp/cancer/dataset
+  metadata: metadata.csv
+  split_file: splits/slide_3fold.csv
+  split_protocol: grouped
+  fold: 1
+  validation_group: slide_0165
+  group_column: slide_id
+  class4_policy: background
+  heldout_internal_role: test
+  heldout_reporting_name: formal_test
+center_labels:
+  root: /root/autodl-tmp/cancer/experiments/satellite_center_labels
+  sigma_px: 2.5
+  truncate_sigma: 3.0
+  overlap_rule: pixelwise_max
+training:
+  seed: 42
+  patch_size:
+  - 1536
+  - 1024
+  batch_size: 2
+  num_workers: 6
+  iterations_per_epoch: 250
+  max_epochs: 250
+  early_stopping_patience_epochs: 50
+  learning_rate: 0.01
+  weight_decay: 3.0e-05
+  segmentation_loss: dice_ce
+  center_loss: modified_focal_fp32_logsigmoid
+  center_loss_weight: 0.2
+  mask_auxiliary_weight: 0.0
+  mixed_precision_network: true
+  center_loss_force_fp32: true
+  fail_on_nonfinite_center_loss: true
+  fail_on_nonfinite_total_loss: true
+  fail_on_nonfinite_gradient: true
+  grad_scaler_init_scale: 128
+  grad_scaler_growth_interval: 1000000
+  center_branch_force_fp32: true
+sampling:
+  categories:
+  - satellite
+  - cluster
+  - nucleus
+  - random
+  probabilities:
+  - 0.35
+  - 0.35
+  - 0.2
+  - 0.1
+augmentation:
+  horizontal_flip: 0.5
+  vertical_flip: 0.5
+  gamma:
+  - 0.85
+  - 1.15
+  intensity_scale:
+  - 0.9
+  - 1.1
+  intensity_shift:
+  - -0.04
+  - 0.04
+  gaussian_noise_probability: 0.15
+inference:
+  overlap: 0.5
+  weighted_fusion: hann_min_0.05
+point_evaluation:
+  checkpoint_threshold: 0.3
+  checkpoint_threshold_policy: fixed_during_checkpoint_selection
+  ap_candidate_threshold: 0.05
+  nms_radius_px: 3
+  checkpoint_match_radius_px: 5
+  reporting_match_radii_px:
+  - 3
+  - 5
+  - 7
+  threshold_sweep:
+  - 0.1
+  - 0.9
+  - 0.05
+  final_threshold_policy: maximize_validation_point_f1_after_checkpoint_selection
+  render_radius_px: 6
+checkpoint_selection:
+  protocol: protocol-v2
+  interval_epochs: 10
+  formula: 0.20*nucleus_dice+0.20*cluster_dice+0.60*satellite_point_ap
+  validation_only: true
+  threshold_is_fixed_during_selection: true
+output: /root/autodl-tmp/cancer/experiments/final/C4_w020_centerFP32_final/fold1/seed42

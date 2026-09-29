@@ -1,0 +1,102 @@
+{
+  "created_at_utc": "2026-09-26T16:26:07.151062+00:00",
+  "protocol_sha256": "ef6cd67a27ea7a91b1f9581034ac85a61f33225ffc38bdef828edb432cc9738f",
+  "retry_log_sha256": "2b9113698877a7f517ebdcafebc057853e6cd6ad986e3a9a84d0f3162a8e4b41",
+  "completed_models_including_seed42": 17,
+  "planned_models_including_seed42": 18,
+  "available_pairs": 8,
+  "planned_pairs": 9,
+  "failed_run": "center_f2_s123",
+  "source_hashes": {
+    "mask_f0_s42": {
+      "test_summary": "db325b319b0f49d09f4ddcd80d4f13c8e7aa4fb376a1e1975f583796a85b886a",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "1b63982bc3ea960acc71e48dee645838da654f64a598920d71713733632168ae"
+    },
+    "center_f0_s42": {
+      "test_summary": "5512a7ff5d46c62923b36309a1ef480e9d2538f75dd17aa82c1299f6b7bdafc7",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "f2cd61cf22ff2af508b53f01b2a25075735f3317f79ee147e0f9cde61b56843f"
+    },
+    "mask_f1_s42": {
+      "test_summary": "8443a219014df69c290c35ddf810c01f6886fe3831ee64b86abd6bc03635be03",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "f18263f08b25728a0e347217e4179762ef4b36596818bf5e04a90cb01e53a43d"
+    },
+    "center_f1_s42": {
+      "test_summary": "c7f9b6c3fc090c50ba6a59d61e3cdde9f8fd398d06ad7b59658212ab423f1acd",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "b0634d401bf76428c06a6093884c149bd036415305ed9c52821a345170bd3612"
+    },
+    "mask_f2_s42": {
+      "test_summary": "8c808ed618d17cf6048c81cfa29df9f62cd57ac18a370efb8580f58a597b4579",
+      "resolved_split": "ce5f9564ecf76ac2a41694c82ac25052cc416f3f9c70a2c9baede67473049fe3",
+      "checkpoint": "910f4b0281a150ff5b21bafac0a81ad80b51e23d1a4ba76fa5c55a07c277eb86"
+    },
+    "center_f2_s42": {
+      "test_summary": "403374a6d2e7d04fe2dca589106f87df4f413fb34873a399bcb0e0cb4f236be7",
+      "resolved_split": "ce5f9564ecf76ac2a41694c82ac25052cc416f3f9c70a2c9baede67473049fe3",
+      "checkpoint": "a423c239fbd4de57415c457e9aaea4e659a75069a3d3f026334958daff57ae1e"
+    },
+    "mask_f0_s123": {
+      "test_summary": "57dd5a8a342b118cfbd8576d899668970428b63983c089076685c3c8852f45a6",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "9e175011d5c7ab08de1c506d3e1f7af2a2957ac6fa7229080fedd7ab4a9275be"
+    },
+    "center_f0_s123": {
+      "test_summary": "19d7702dca46339ee19be96594704e2494af45deb3782e632a46964069960b59",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "43a278e0223258ed823e8ecb0d6abb6f2e2bb1b7cd39c7b9c1b5440193da39b7"
+    },
+    "mask_f1_s123": {
+      "test_summary": "efac21ee027cd791a393b20f98996cd4fe23047df1a913d47fac7d1ae9b517f9",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "c8eaae9aa41913344db8e6366e1e82f25322a857d3fb9e85748e56fda3d78117"
+    },
+    "center_f1_s123": {
+      "test_summary": "8233902a8b581de5218541824d1e77cca384c4463e8798a72f952fd44344e4ab",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "c67625beb3bda6c6a6da53061e44dbd3d29fd875c6193d6ddb42c77dfba6ce7a"
+    },
+    "mask_f2_s123": {
+      "test_summary": "a77ca2ee37c76f9b5a35dfaf51ffd23c2ada2a628fee39469c3267ee27b5c92b",
+      "resolved_split": "ce5f9564ecf76ac2a41694c82ac25052cc416f3f9c70a2c9baede67473049fe3",
+      "checkpoint": "957ede9bd7b5bff958484f7923c67c41f34fcc47bcb4a28ffccacc1ec2e2c30b"
+    },
+    "mask_f0_s2026": {
+      "test_summary": "ecb62ed08a37cbd723fa16b242de772c48a762ff47f05dcc4b98db1be7c349c6",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "da39a7a61fbf8c948604931fc5a9606e3ba95f04d7fb4a7e29346f17b8aedc4e"
+    },
+    "center_f0_s2026": {
+      "test_summary": "bb1c2402082507918e13b580fa1f3db182d02deabfd867ab31bd705b5fd4c46f",
+      "resolved_split": "093597d72dcd9c6872517947751172cee9d9bbb9434e58fa2030bb89be96dc77",
+      "checkpoint": "ee0676326e5a2ba83d8d9fc3c80dbcddfa80ab6739863422318f8c8f8d3bf01f"
+    },
+    "mask_f1_s2026": {
+      "test_summary": "b2ddb31dbbafcad0ae1229c45d5bc0ba43ac95d9afab4102ec96c205b8036ced",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "771b4709cedb5a6a7b72030eb36a665b9cc73e20df2ade4715def69981a8ffa7"
+    },
+    "center_f1_s2026": {
+      "test_summary": "bb1192085d7d91ece96fb7d6b5dbdea4873cc5c85e8fd55f04226354cb5f8785",
+      "resolved_split": "7eb786da7b46a7b020073d5cd3d39d09e18b131793775995cc543d690be405aa",
+      "checkpoint": "0683a424c83e8ceced8b5da48ed56b4e72d4f2d4bc744f2a9e864337ba52b90b"
+    },
+    "mask_f2_s2026": {
+      "test_summary": "585902c79dd2277fbf151b769a78f8c0037c339834b62f7a89f9290c3d2476e2",
+      "resolved_split": "ce5f9564ecf76ac2a41694c82ac25052cc416f3f9c70a2c9baede67473049fe3",
+      "checkpoint": "d0e1c71f16905e0092f9855e2e5f0be8c5b662e3a42b80760dd2aef11685ce31"
+    },
+    "center_f2_s2026": {
+      "test_summary": "4c3d08dc7f53c7f7665728a73433badc1ab30e55f471c0d880fc424c95d94d21",
+      "resolved_split": "ce5f9564ecf76ac2a41694c82ac25052cc416f3f9c70a2c9baede67473049fe3",
+      "checkpoint": "aa3af04c4c2db7b802deba715a4402cf5ab639ed90fef29f8cc9f378383e6095"
+    }
+  },
+  "failed_attempt_training_log_hashes": {
+    "center_f2_s123_attempt1": "d76a7fc9b672d83f4e19afe81a91008117ea487bfcf04dd971917db0a9d44c07",
+    "center_f2_s123_attempt2": "3c12526c0047df468c0434233fe02be46f02c7c85985542b9f88935d304804ad"
+  },
+  "interpretation": "The prespecified three-seed protocol is not fully complete. Available-pair summaries are descriptive and explicitly unbalanced."
+}

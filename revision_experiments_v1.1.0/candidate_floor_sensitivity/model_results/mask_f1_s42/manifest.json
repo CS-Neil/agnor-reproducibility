@@ -1,0 +1,7 @@
+{
+  "created_at_utc": "2026-09-23T18:12:16.194507+00:00",
+  "model": "mask_f1_s42",
+  "config_sha256": "61c0851d06033d4ed7c9f0ca6922e3306f67516b4d5ccb847e601a66b6efb738",
+  "checkpoint_sha256": "f18263f08b25728a0e347217e4179762ef4b36596818bf5e04a90cb01e53a43d",
+  "protocol_sha256": "c1f1bdb225e22f5103bde4c19706525ee1aeee070bd231b45e9163e1cda16338"
+}

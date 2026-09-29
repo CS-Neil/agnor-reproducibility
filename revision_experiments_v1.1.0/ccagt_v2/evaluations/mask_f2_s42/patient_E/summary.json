@@ -1,0 +1,22 @@
+{
+  "patient_id": "patient_E",
+  "images": 506,
+  "satellite_instances": 336,
+  "point_ap": 0.0799217408368934,
+  "point_precision": 0.1518987341772152,
+  "point_recall": 0.35714285714285715,
+  "point_f1": 0.21314387211367672,
+  "tp": 120,
+  "fp": 670,
+  "fn": 216,
+  "fp_per_image": 1.3241106719367588,
+  "count_mae_all": 1.2806324110671936,
+  "count_mae_positive": 1.5515151515151515,
+  "zero_case_fp": 1.1495601173020529,
+  "positive_case_recall": 0.35714285714285715,
+  "localization_error": 2.868786673247814,
+  "operating_threshold": 0.9,
+  "candidate_floor": 0.05,
+  "nms_radius_px": 3,
+  "matching_radius_px": 5.0
+}

@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "input": "patient_paired_differences.csv",
+  "input_sha256": "d945df70a9bb38cc400747fd9dee737d894fba8865a128a07bdad544193fef0e",
+  "output": "patient_paired_uncertainty.csv",
+  "output_sha256": "d6584f67003c2bb68a4533b0f3a9eb3283d6003154ff8638fd07fabac377c2e7",
+  "independent_units": 12,
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 20260927,
+  "interval": "percentile bootstrap interval for the paired-unit mean",
+  "interpretation": "descriptive; no population-level hypothesis test"
+}

@@ -1,0 +1,7 @@
+{
+  "created_at_utc": "2026-09-23T20:08:27.011893+00:00",
+  "model": "center_f1_s42",
+  "config_sha256": "f817c911f121e6fe7c9733d614b5dbd87023b98a2fecf1fff8121a6d132a7c8f",
+  "checkpoint_sha256": "b0634d401bf76428c06a6093884c149bd036415305ed9c52821a345170bd3612",
+  "protocol_sha256": "c1f1bdb225e22f5103bde4c19706525ee1aeee070bd231b45e9163e1cda16338"
+}

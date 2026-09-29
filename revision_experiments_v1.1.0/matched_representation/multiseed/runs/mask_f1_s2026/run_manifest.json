@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-09-25T21:16:45.967781+00:00",
+  "python_executable": "/home/neil/cancer/.venv-revision-uv/bin/python",
+  "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/mask_f1_s2026.yaml",
+  "sha256": {
+    "config": "7ddb4d11b93b8f8a8029969fd4d790c6f738bf6da593d751aee79bfb355d9f10",
+    "training_script": "ea10af9ba32bbedad01b297383046586f315a9e81a394e5875ed98e934ea0bc3",
+    "test_script": "4419e936763a663d328da7038ddbeaa179d09219e1c2bba46cb286b2e53a80f0"
+  },
+  "no_feedback_rule": "The held-out test split is evaluated once after checkpoint selection and threshold calibration on validation data."
+}

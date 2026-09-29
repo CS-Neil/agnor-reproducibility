@@ -1,0 +1,25 @@
+{
+  "completed_at_utc": "2026-09-21T20:33:17.914981+00:00",
+  "eligible_patient_slide_units": [
+    "patient_D",
+    "patient_E",
+    "patient_F",
+    "patient_G",
+    "patient_H",
+    "patient_I",
+    "patient_J",
+    "patient_K",
+    "patient_L",
+    "patient_M",
+    "patient_N",
+    "patient_O"
+  ],
+  "model_patient_rows": 72,
+  "sha256": {
+    "model_patient_metrics.csv": "0690c635b7fb8b7405dfe3a3db862bd71cb7e9652f0763a9b5f0bbc257723603",
+    "patient_arm_metrics.csv": "9a4dcfc7ec37765f957cb32d8a945d03bbc50366d22fddcad6224f7e74f3c5e9",
+    "fold_patient_paired_differences.csv": "51f28f9aed0eceedcd359639ed6a8d30ddc225b951e693488f7e0b151f4f63f3",
+    "patient_paired_differences.csv": "d945df70a9bb38cc400747fd9dee737d894fba8865a128a07bdad544193fef0e",
+    "cohort_paired_summary.csv": "4cbd7fc0ea1a73d88355f6169e95fd427f2a99f38555e4002069e04a6e0582ea"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "release_tag": "C4_w020_centerFP32_final",
+  "frozen": true,
+  "frozen_at_utc": "2026-08-08T16:21:31.019382+00:00",
+  "stop_rule": "No method or hyperparameter changes after freezing unless a code error or data leakage is demonstrated. Formal test results cannot trigger changes.",
+  "stability_interpretation": "The release is numerically stable under the center-branch FP32 fix; ordinary optimization variance is accepted and not claimed absent.",
+  "method": {
+    "semantic_outputs": [
+      "Background",
+      "Nucleus",
+      "Cluster"
+    ],
+    "satellite_output": "Gaussian center heatmap detection",
+    "sampling_probabilities": {
+      "satellite": 0.35,
+      "cluster": 0.35,
+      "nucleus": 0.2,
+      "random": 0.1
+    },
+    "semantic_loss": "DiceCE",
+    "center_loss": "modified focal loss",
+    "center_weight": 0.2,
+    "mixed_precision_network": true,
+    "center_head_and_loss_fp32": true,
+    "gaussian_sigma_px": 2.5,
+    "nms_radius_px": 3,
+    "matching_radius_px": 5,
+    "checkpoint_protocol": "protocol-v2: 0.20*NucleusDice + 0.20*ClusterDice + 0.60*PointAP",
+    "threshold_protocol": "After checkpoint selection, maximize Point F1 on validation only; 0.10-0.90 in steps of 0.05",
+    "max_epochs": 250,
+    "early_stopping_patience_epochs": 50,
+    "seed": 42
+  },
+  "formal_confirmation": {
+    "design": "strict three-fold leave-one-patient/slide-out CV",
+    "independent_patients": 3,
+    "independent_slides": 3,
+    "important_limitation": "With only three patients, each fold uses one patient for training, one for validation, and one held out for testing.",
+    "test_policy": "one inference after validation checkpoint/threshold freezing",
+    "reuse": {
+      "fold0_seed42": "/root/autodl-tmp/cancer/experiments/stability/C4_w020_stable_v2_gate/fold0/seed42",
+      "fold2_seed42": "/root/autodl-tmp/cancer/experiments/stability/C4_w020_stable_v2_gate/fold2/seed42",
+      "condition": "Reusable only after exact config/source hash verification."
+    }
+  },
+  "environment": {
+    "python": "3.11.4 (main, Jul  5 2023, 08:40:20) [Clang 14.0.6 ]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "git": {
+      "available": false,
+      "commit": null,
+      "status": null
+    }
+  },
+  "sha256": {
+    "baseline/train_center_multitask_stability.py": "3aebd1774df7a27e7c3abd157985c61a5f9ebc2f180ac2766e31f93335c41bb1",
+    "baseline/ccagt_baseline/center_detection.py": "1b3c975b8462ab79b518239f0c59d38c0450113d485e11e042e205f6a159e015",
+    "baseline/ccagt_baseline/data.py": "63cb80a61c4ef15098af2625b6025973549231157c976e00984965c31b778363",
+    "baseline/ccagt_baseline/losses.py": "ac803c13581dea35d5422ee8846bd47dc8cc8a17ad08ba4c38249f3a32f62372",
+    "baseline/ccagt_baseline/metrics.py": "ffbc694dce97ee5c4dc4962429ed02426827658bc5ca6c0518b3bf490455f57c",
+    "baseline/ccagt_baseline/utils.py": "a7b733b9134c25af34ba0be5d7d8dff98c7503ac94e4d28e1ec569fe2fb65cd0",
+    "baseline/prepare_satellite_centers.py": "92948fdacd4d8aeced9fad762b68a82acab059a10b374df42ed8dba2cfff041f",
+    "dataset/metadata.csv": "b737ace4ff91a8d6ef47e6ad3f3de24df5282dba77d18bbdfa65c0f1328d1e36",
+    "dataset/splits/slide_3fold.csv": "e91e014e5aba51daae7e583a976b18c4a8aca48e5e10ebfba0a7bb2c28aee87e",
+    "experiments/satellite_center_labels/centers.csv": "b066e6b6db6618e5d058eb84a1ddfd66833f7d8bd8e5b1563c01e8a9f9c1809d",
+    "experiments/satellite_center_labels/image_summary.csv": "7af460073737a2cc2dd8c33e71ee1599b99609fca78786ba23b0bcdf5a0cdee9",
+    "baseline/configs/C4_w020_centerFP32_final/C4_w020_centerFP32_final_f0_s42.yaml": "1118c9d86a2eed162867d96ebd80171e5a7f85631f2dc67c9872a0e0d07cd45e",
+    "baseline/configs/C4_w020_centerFP32_final/C4_w020_centerFP32_final_f1_s42.yaml": "f14304e661c3c67f12c900d2cb37b7d22913aa74e9c5b8d8bbcd06e22c705303",
+    "baseline/configs/C4_w020_centerFP32_final/C4_w020_centerFP32_final_f2_s42.yaml": "1ad64c4310165034c2ccb76133cec052bd2f4cf8fb29903b9da7eaf6c45e302d"
+  }
+}

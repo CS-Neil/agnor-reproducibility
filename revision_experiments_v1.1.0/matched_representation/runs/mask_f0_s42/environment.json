@@ -1,0 +1,19 @@
+{
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "python_executable": "/home/neil/cancer/.venv-revision-uv/bin/python",
+  "torch_cuda": "12.8",
+  "cudnn": 91002,
+  "cuda_available": true,
+  "gpu_names": [
+    "NVIDIA GeForce RTX 4060 Ti"
+  ],
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "numpy": "2.3.2",
+    "scipy": "1.16.1",
+    "Pillow": "11.3.0",
+    "PyYAML": "6.0.2",
+    "tqdm": "4.67.1"
+  }
+}

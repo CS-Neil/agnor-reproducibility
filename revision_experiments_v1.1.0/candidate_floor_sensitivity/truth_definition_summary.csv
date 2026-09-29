@@ -1,0 +1,11 @@
+metric,model_patient_rows,mean_polygon_minus_bbox,sample_sd_polygon_minus_bbox,max_absolute_difference,nonzero_rows
+point_ap_at_floor_0_05,72,0.0,0.0,0.0,0
+point_precision,72,0.0,0.0,0.0,0
+point_recall,72,0.0,0.0,0.0,0
+point_f1,72,0.0,0.0,0.0,0
+fp_per_image,72,0.0,0.0,0.0,0
+count_mae_all,72,0.0,0.0,0.0,0
+count_mae_positive,72,0.0,0.0,0.0,0
+zero_case_fp,72,0.0,0.0,0.0,0
+positive_case_recall,72,0.0,0.0,0.0,0
+localization_error,70,-0.0003063731192883834,0.001253488713728876,0.004744754230048054,69

@@ -1,0 +1,34 @@
+{
+  "created_at_utc": "2026-09-21T18:01:24.172562+00:00",
+  "config": "/home/neil/cancer/revision_experiments/matched_representation/configs/mask_f2_s42.yaml",
+  "checkpoint": "/home/neil/cancer/revision_experiments/matched_representation/runs/mask_f2_s42/checkpoint_best.pth",
+  "sha256": {
+    "config": "aa836bb78fc0870a255c2dd8ca79b4e3770ffe91b94603902765514efd1a3dc2",
+    "checkpoint": "910f4b0281a150ff5b21bafac0a81ad80b51e23d1a4ba76fa5c55a07c277eb86",
+    "protocol": "be8d36ddad4361f22758c275b089ce4030df44b3eed3325d889190a3195ff0b0",
+    "audit": "7d9b7adde3e821295e242aa1a6c1bb1fcc3ad6bea518f1de6420915293751da6"
+  },
+  "operating_threshold": 0.9,
+  "candidate_floor": 0.05,
+  "nms_radius_px": 3,
+  "matching_radius_px": 5.0,
+  "eligible_patient_slide_units": [
+    "patient_D",
+    "patient_E",
+    "patient_F",
+    "patient_G",
+    "patient_H",
+    "patient_I",
+    "patient_J",
+    "patient_K",
+    "patient_L",
+    "patient_M",
+    "patient_N",
+    "patient_O"
+  ],
+  "excluded_patient_slide_units": [
+    "patient_A",
+    "patient_B",
+    "patient_C"
+  ]
+}

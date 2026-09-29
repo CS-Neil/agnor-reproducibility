@@ -1,0 +1,56 @@
+[
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/mask_f0_s2026.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/mask_f0_s2026",
+    "status": "completed",
+    "started_at_utc": "2026-09-25T14:35:47.985399+00:00",
+    "finished_at_utc": "2026-09-25T17:32:33.686818+00:00",
+    "train_exit_code": 0,
+    "test_exit_code": 0
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/center_f0_s2026.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/center_f0_s2026",
+    "status": "completed",
+    "started_at_utc": "2026-09-25T17:32:33.694909+00:00",
+    "finished_at_utc": "2026-09-25T21:16:45.964228+00:00",
+    "train_exit_code": 0,
+    "test_exit_code": 0
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/mask_f1_s2026.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/mask_f1_s2026",
+    "status": "completed",
+    "started_at_utc": "2026-09-25T21:16:45.967781+00:00",
+    "finished_at_utc": "2026-09-26T01:41:34.162596+00:00",
+    "train_exit_code": 0,
+    "test_exit_code": 0
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/center_f1_s2026.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/center_f1_s2026",
+    "status": "completed",
+    "started_at_utc": "2026-09-26T01:41:34.197178+00:00",
+    "finished_at_utc": "2026-09-26T05:20:18.990119+00:00",
+    "train_exit_code": 0,
+    "test_exit_code": 0
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/mask_f2_s2026.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/mask_f2_s2026",
+    "status": "completed",
+    "started_at_utc": "2026-09-26T05:20:19.029441+00:00",
+    "finished_at_utc": "2026-09-26T09:56:50.246330+00:00",
+    "train_exit_code": 0,
+    "test_exit_code": 0
+  },
+  {
+    "config": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/configs/center_f2_s2026.yaml",
+    "output": "/home/neil/cancer/revision_experiments/matched_representation/multiseed/runs/center_f2_s2026",
+    "status": "completed",
+    "started_at_utc": "2026-09-26T09:56:50.251846+00:00",
+    "finished_at_utc": "2026-09-26T15:57:13.546720+00:00",
+    "train_exit_code": 0,
+    "test_exit_code": 0
+  }
+]
